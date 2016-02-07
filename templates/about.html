@@ -1,12 +1,7 @@
-<?php include('inc/header.php'); ?>
+{% extends "layout.html" %}
 
-
-		<div id="guts">
-			<div id="blues">
-
-				<h1>About Roots</h1>
-				<h2>What is Blues?</h2>
-				<div class="text-block">
+{% block title %}What is Blues?{% endblock title%}
+{% block content %}
 					<p>Blues is a feeling.</p>
 					<p>Blues is an attitude.</p>
 					<p>Blues is... what we do.</p>
@@ -14,11 +9,4 @@
 					<p>Roots of Blues's mission is to help define blues dance
 					while fostering an appreciation for blues music and the 
 					rich history from which it draws.</p>
-				</div>
-
-			</div>
-		</div> <!-- close guts -->
-
-
-
-<?php include('inc/footer.php'); ?>
+{% endblock content %}

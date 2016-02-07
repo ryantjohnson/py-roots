@@ -32,7 +32,7 @@
 
     <header>
         <div id="main-title">
-            <h1 class="title-h1"><a href="/index.html">Roots of Blues</a></h1>
+            <h1 class="title-h1"><a href="#{{ url_for('index') }}">Roots of Blues</a></h1>
             <h4>Under Construction</h4>
         </div>
     </header>
@@ -41,18 +41,18 @@
 
         <div class="main-nav hidden-xs">
             <ul class="nav nav-pills nav-stacked" role="navigation">
-                <li><a href="/templates/index.html">Home</a></li>
+                <li><a href="#{{ url_for('index') }}">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="about-dropdown">
-                        <li class="dropdown-item"><a href="templates/staff.html">Staff</a></li>
-                        <li class="dropdown-item"><a href="templates/venue.html">Venue</a></li> 
-                        <li class="dropdown-item"><a href="templates/affiliates.html">Affiliates</a></li>
+                        <li class="dropdown-item"><a href="#{{ url_for('staff') }}">Staff</a></li>
+                        <li class="dropdown-item"><a href="#{{ url_for('venue') }}">Venue</a></li> 
+                        <li class="dropdown-item"><a href="#{{ url_for('affiliates') }}">Affiliates</a></li>
                     </ul>
                 </li>
-                <li><a href="#about.html">What is Blues?</a></li>
-                <li><a href="#events.html">Events</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="#{{ url_for('about') }}">What is Blues?</a></li>
+                <li><a href="#{{ url_for('events') }}">Events</a></li>
+                <li><a href="#{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </div><!-- close main-nav -->
 
