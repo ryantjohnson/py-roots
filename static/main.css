@@ -1,0 +1,299 @@
+/************************
+Global
+************************/
+
+@font-face {
+    font-family: "Ironick NF";
+    src: url(fonts/IronickNF.ttf); }
+
+* {
+	margin: 0; }
+
+/************************
+General links and font styling
+************************/
+
+h1 {
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 0em;
+	text-align: center;
+	padding: 0.1em 0 0.1em 0.5em; }
+
+
+h1, h2, h3, h4, p, a {
+	background-color: transparent; }
+
+h1, h2, h3, h4, a {
+	color: #ba7800; }
+
+h2 { 
+	border-bottom:2px double #d0d0d0;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 0em;
+	margin-right: 3em;
+	text-align: left; 
+	width: 100%;}
+
+h3 {
+	font-weight: 600;
+	padding: 0;
+	margin: 0; }
+
+h4 {
+	font-style: italic;
+	color: #B3d7ff; }
+
+p {
+	margin-left: 1em;
+	font-size: 1.35em;
+	color: #B3d7ff;
+	text-shadow: 0 0 1px transparent;
+	font-weight: 700; }
+
+a:link {
+	font-size: 1.3em;
+	text-decoration: none; }
+a:focus,
+a:hover {
+ 	color: #B3d7ff;
+ 	font-size: 1.3em; }
+
+/************************
+Body
+************************/
+
+html,
+body {
+    height: 100%; }
+
+body {
+	font-family: "Josefin Sans";
+	overflow-x: hidden;
+	overflow-y: scroll; }
+
+#body-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto -100px;
+	overflow:hidden;
+	z-index:9999; }
+
+#body-wrapper:before {
+	content:"";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display:block;
+	background-image:url('bluesalley.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	background-attachment: fixed;
+	background-color: #001943;
+	width:100%;
+	height:100%;
+	-webkit-filter: sepia(60%) hue-rotate(200deg);
+	-moz-filter: sepia(60%);
+	-o-filter: sepia(60%);
+	-ms-filter: sepia(60%);
+	filter: sepia(60%);
+	-webkit-filter: hue-rotate(50%);}
+
+#main-content {
+	position: relative;
+	margin: 0;
+	padding-bottom: 100px;
+	overflow:auto; }
+
+.clearfix {
+	overflow: auto; }
+
+/************************
+Main content area
+************************/
+
+#guts {
+	background: rgba(25,25,35,0.5);
+	padding: 1em;
+	border-radius: 10px; }
+
+.text-block {
+	background: transparent;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+	border-radius: 4px; 
+	padding-left: 1em; }
+
+.title {
+	font-size: 40px;
+	color: #B3d7ff;
+	text-align: center;
+	background-color: transparent;
+	margin: 0 auto; }
+
+.vertical-center {
+	margin: 15% 0; }
+
+/*************************
+Header
+*************************/
+
+#main-title {
+	margin: 2em auto 0;
+	text-align:center;
+	background-color: transparent; }
+
+.title-h1 {
+	background-color: transparent;
+	font-family: "Ironick NF";
+	letter-spacing: 2px;
+	font-size: 65px;
+	margin:0;
+	margin-bottom: 10px;
+	padding:0;
+	font-weight: 300;
+	text-align: center;
+	display: inline-block;
+	text-decoration: underline;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;; }
+
+
+/*************************
+Nav
+*************************/
+
+.nav li a:hover {
+ 	background-color: rgba(255,255,255,0.1); }
+
+.navbar-default {
+	background: transparent;
+	border:none;
+	color: #B3d7ff;
+	margin:0;
+	padding: 0; }
+
+.navbar {
+	text-align:right;
+	padding-right: 3em;
+	position:fixed;
+	width:20em;
+	right: 0; }
+
+.nav {
+	padding-top: 0em; }
+
+.nav li a {
+	font-size: 1.75em;
+	text-shadow: none; }
+
+.nav>li>a:focus {
+	background-color: rgba(0,0,0,0.1); }
+
+.dropdown ul {
+	display:inline;
+	background-color: rgba(0,0,0,0.5);
+	padding:inherit;
+	position:absolute;
+	width:100%; }
+
+.dropdown ul li a {
+	color:#B3d7ff;
+}
+
+.dropdown ul>li>a:hover, a:focus {
+	color:#B3d7ff;
+	text-decoration:none;
+}
+
+.dropdown-item {
+	text-align:left;
+	padding:inherit;
+	margin: inherit;
+	font-size:0.9em; }
+
+/* animate dropdown */
+
+.dropdown .dropdown-menu {
+ 	transition: all 0.75s;
+ 	max-height: 0;
+	overflow: hidden;
+ 	opacity: 0; }
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1; }
+
+.nav > li.dropdown.active.open > a, 
+.nav > li.dropdown.active.open > ul.dropdown-menu a:hover,
+.nav > li.dropdown.open > a, 
+.nav > li.dropdown.open > ul.dropdown-menu a:hover {
+	background-color: rgba(255,255,255,0.1); }
+/* end animate dropdown */
+
+/*************************
+Pages
+*************************/
+
+/* Contact */
+
+/* Staff */
+
+.headshot {
+	height: 150px;
+	width: 150px;
+	border-radius: 10%;
+	border: 1px solid black;
+	margin-right: 2em;
+	margin-left:2em; }
+
+.staff-item {
+	margin-top: 2em; }
+
+.staff-item:nth-child(odd) {
+	text-align:right; }
+
+
+/* Affiliates */
+
+#affiliates li {
+
+}
+
+/*************************
+Footer
+*************************/
+
+#footer {
+	text-align: center;
+	margin-top: -100px;
+	position: relative;
+	clear:both;
+}
+
+.social span {
+	font-size: 2em;
+	margin: 10px 20px 10px 20px;
+	text-align: center; }
+
+.social a:link, .social a:visited {
+	color:rgba(179,215,255,0.5);
+}
+
+.social a:hover, .social a:focus {
+	color: #B3d7ff;
+}
+
+.copyright {
+	font-size:0.75em;
+	padding-bottom: 20px;
+	color:rgba(179,215,255,0.5);
+}

@@ -1,0 +1,47 @@
+
+/*************************
+Responsive
+*************************/
+
+@media(max-width:767px) {
+	body {
+		padding-top: 2em; }
+
+	#body-wrapper:before {
+		background-attachment: none;
+
+	}
+
+	.nav {
+		background: black;
+		height:auto; }
+
+	.nav li a {
+		font-size: 1.10em;
+		padding: 0.5em 0.2em;
+		margin: 0.25em 0.1em;
+		display:inline-block;
+		text-align:center; }
+
+	.title-h1 {
+		font-size:48px;
+		letter-spacing:2px; }
+
+	p {
+		font-size: 1.1em; }
+}
+
+@media only screen and (max-width:768px) {
+	.main-nav {
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:960px) {
+	.main-nav {
+	}
+}
+
+@media only screen and (min-width:960px) {
+	.main-nav {
+	}
+}

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Dosis:400,700|Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Dosis:400,700|Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Dosis:400,700|Josefin+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- link to CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link href="static/main.css" rel="stylesheet">
+    <link href="static/responsive.css" rel="stylesheet">
+
+    <title>Roots of Blues</title>
+
+</head>
+
+
+<body>
+
+<div id="background"></div>
+
+<div id="body-wrapper">
+
+    <header>
+        <div id="main-title">
+            <h1 class="title-h1"><a href="/index.html">Roots of Blues</a></h1>
+            <h4>Under Construction</h4>
+        </div>
+    </header>
+
+    <div class="navbar">
+
+        <div class="main-nav hidden-xs">
+            <ul class="nav nav-pills nav-stacked" role="navigation">
+                <li><a href="/templates/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="about-dropdown">
+                        <li class="dropdown-item"><a href="templates/staff.html">Staff</a></li>
+                        <li class="dropdown-item"><a href="templates/venue.html">Venue</a></li> 
+                        <li class="dropdown-item"><a href="templates/affiliates.html">Affiliates</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about.html">What is Blues?</a></li>
+                <li><a href="#events.html">Events</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
+        </div><!-- close main-nav -->
+
+        <div class="mobile-nav visible-xs">
+            <ul class="nav nav-pills navbar-fixed-top">
+                <li><a href="#index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="about-dropdown">
+                        <li class="dropdown-item"><a href="#staff.html">Staff</a></li>
+                        <li class="dropdown-item"><a href="#venue.html">Venue</a></li> 
+                        <li class="dropdown-item"><a href="#affiliates.html">Affiliates</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about.html">What is Blues?</a></li>
+                <li><a href="#events.html">Events</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
+        </div> <!-- close mobile-nav -->
+
+    </div> <!-- close navbar -->
+
+<div class="row"> <!-- required for bootstrap grid -->
+
+    <div class="col-md-3"></div> <!-- space on left side -->
+
+    <div class="col-md-6" id="main-content"> <!-- required for fade-in -->
+
+        <div id="guts">
+            <div id="contact">
+            
+                <h1>{% block title %}{% endblock title %}</h1>
+                <h2>{% block subtitle %}{% endblock subtitle %}</h2>
+                <p class="text-block">{% block content %}{% endblock content %}</p>
+
+            </div>
+        </div> <!-- close guts -->
+
+</div> <!-- close row -->
+
+<div class="push"></div>
+
+</div> <!-- close #main-content -->
+
+</div> <!-- close body-wrapper -->  
+
+<footer>
+    <div class="row clearfix" id="footer">
+        <div class="col-md-12 social">
+            <a href="#"><span class="fa fa-facebook-official"></span></a>
+            <a href="#"><span class="fa fa-envelope"></span></a>
+            <a href="#"><span class="fa fa-spotify"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
+        </div>
+        <p class="copyright">&copy <?html echo date("Y") ?> Roots of Blues</p>
+    </div>
+</footer>
+
+</body>
+
+<foot>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/main.js"></script>
+</foot>
+</html>
