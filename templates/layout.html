@@ -82,10 +82,10 @@
     <div class="col-md-6" id="main-content"> <!-- required for fade-in -->
 
         <div id="guts">
-            <div id="contact">
-            
-                <h1>{% block title %}{% endblock title %}</h1>
-                <h2>{% block subtitle %}{% endblock subtitle %}</h2>
+            <div id="home" class="vertical-center">
+
+                <h3 class="title">{% block title %}{% endblock title %}</h3>
+                <h4 class="title">{% block subtitle %}{% endblock subtitle %}</h4>
                 <p class="text-block">{% block content %}{% endblock content %}</p>
 
             </div>
@@ -107,7 +107,7 @@
             <a href="#"><span class="fa fa-spotify"></span></a>
             <a href="#"><span class="fa fa-youtube"></span></a>
         </div>
-        <p class="copyright">&copy <?html echo date("Y") ?> Roots of Blues</p>
+        <p class="copyright">&copy <?php echo date("Y") ?> Roots of Blues</p>
     </div>
 </footer>
 
