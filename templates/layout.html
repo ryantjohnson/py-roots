@@ -54,7 +54,7 @@
                 <li><a href="#{{ url_for('events') }}">Events</a></li>
                 <li><a href="#{{ url_for('contact') }}">Contact</a></li>
             </ul>
-        </div><!-- close main-nav -->
+        </div><!-- close main-nav --> 
 
         <div class="mobile-nav visible-xs">
             <ul class="nav nav-pills navbar-fixed-top">
@@ -82,11 +82,8 @@
     <div class="col-md-6" id="main-content"> <!-- required for fade-in -->
 
         <div id="guts">
-            <div id="home" class="vertical-center">
 
-                <h3 class="title">{% block title %}{% endblock title %}</h3>
-                <h4 class="title">{% block subtitle %}{% endblock subtitle %}</h4>
-                <p class="text-block">{% block content %}{% endblock content %}</p>
+            {% block content %}{% endblock content %}
 
             </div>
         </div> <!-- close guts -->
