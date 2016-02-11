@@ -1,18 +1,14 @@
-<?php include('inc/header.php'); ?>
+{% extends "layout.html" %}
+{% block content %}
 
+	<div id="contact">
+	
+	    <h1>Contact</h1>
+	    <h2>Questions? Comments?</h2>
+	    <p class="text-block">We'll respond to all your feedback.<br><br>
+	    Send an email to <a href="#" id="contact">info@rootsofbuesdance.com</a>.</p>
 
+    </div>
+</div> <!-- close guts -->
 
-		<div id="guts">
-			<div id="contact">
-			
-			    <h1>Contact</h1>
-			    <h2>Questions? Comments?</h2>
-			    <p class="text-block">We'll respond to all your feedback.<br><br>
-			    Send an email to <a href="#" id="contact">info@rootsofbuesdance.com</a>.</p>
-
-		    </div>
-		</div> <!-- close guts -->
-
-
-
-<?php include('inc/footer.php'); ?>
+{% endblock content %}

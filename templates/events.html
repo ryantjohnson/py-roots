@@ -1,27 +1,24 @@
-<?php include('inc/header.php'); ?>
+{% extends "layout.html" %}
+{% block content %}
 
-        <div id="guts">
-            <div id="events">
-            
-                <h1>Events</h1>
+    <div id="events">
+    
+        <h1>Events</h1>
 
-                <h2>Events Listing</h2>
-                <div class="text-block">
-                    <h3>FH5 Presents: Blues Dance Jack and Jill Competition</h3>
-                    <h4>March 27, 2016</h4>
-                    <p>No partner necessary! Bring your best and show Sacramento what blues dance is all about.</p>
+        <h2>Events Listing</h2>
+        <div class="text-block">
+            <h3>FH5 Presents: Blues Dance Jack and Jill Competition</h3>
+            <h4>March 27, 2016</h4>
+            <p>No partner necessary! Bring your best and show Sacramento what blues dance is all about.</p>
 
-                    <h3>The Grand Opening</h3>
-                    <h4>April 7, 2016</h4>
-                    <p>Opening night! Don't miss the grand opening of Roots.</p>
-                </div>
+            <h3>The Grand Opening</h3>
+            <h4>April 7, 2016</h4>
+            <p>Opening night! Don't miss the grand opening of Roots.</p>
+        </div>
 
-                <h2>The Blues Calendar</h2>
-                <div class="text-block">
-                    <p>Check back here to see our calendar!</p>
-                </div>
+        <h2>The Blues Calendar</h2>
+        <div class="text-block">
+            <p>Check back here to see our calendar!</p>
+        </div>
 
-            </div>
-        </div> <!-- close guts -->
-
-<?php include('inc/footer.php'); ?>
+{% endblock content %}

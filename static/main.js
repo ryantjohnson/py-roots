@@ -1,36 +1,64 @@
-$(function() {
+// $(function() {
 
-    var newHash      = "",
-        $mainContent = $("#main-content"),
-        $pageWrap    = $("#page-wrap"),
-        baseHeight   = 0,
-        $el;
+//     var newHash      = "",
+//         $mainContent = $("#main-content"),
+//         $pageWrap    = $("#page-wrap"),
+//         baseHeight   = 0,
+//         $el;
         
-    $pageWrap.height($pageWrap.height());
-    baseHeight = $pageWrap.height() - $mainContent.height();
+//     $pageWrap.height($pageWrap.height());
+//     baseHeight = $pageWrap.height() - $mainContent.height();
     
-    $(window).bind('hashchange', function(){
+//     $(window).bind('hashchange', function(){
     
-        newHash = window.location.hash.substring(1);
+//         newHash = window.location.hash.substring(1);
         
-        if (newHash) {
-            $mainContent
-                .find("#guts")
-                .fadeOut(400, function() {
-                    $mainContent.hide().load(newHash + " #guts", function() {
-                        $mainContent.fadeIn(400, function() {
-                            $pageWrap.animate({
-                                height: baseHeight + $mainContent.height() + "px"
-                            });
-                        });
-                        $("nav a").removeClass("current");
-                        $("nav a[href='"+newHash+"']").addClass("current");
-                    });
-                });
-        };
+//         if (newHash) {
+//             $mainContent
+//                 .find("#guts")
+//                 .fadeOut(400, function() {
+//                     $mainContent.hide().load(newHash + " #guts", function() {
+//                         $mainContent.fadeIn(400, function() {
+//                             $pageWrap.animate({
+//                                 height: baseHeight + $mainContent.height() + "px"
+//                             });
+//                         });
+//                         $("nav a").removeClass("current");
+//                         $("nav a[href='"+newHash+"']").addClass("current");
+//                     });
+//                 });
+//         };
         
-    });
+//     });
     
-    $(window).trigger('hashchange');
+//     $(window).trigger('hashchange');
+
+// });
+
+$(document).ready(function() {
+
+$('#guts').css('display', 'none');
+
+$('#guts').fadeIn(1000);
+
+
+
+$('.link').click(function(event) {
+
+event.preventDefault();
+
+newLocation = this.href;
+
+$('#guts').fadeOut(1000, newpage);
+
+});
+
+
+
+function newpage() {
+
+window.location = newLocation;
+
+}
 
 });

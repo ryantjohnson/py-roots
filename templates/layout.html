@@ -41,7 +41,7 @@
 
         <div class="main-nav hidden-xs">
             <ul class="nav nav-pills nav-stacked" role="navigation">
-                <li><a href="#{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="about-dropdown">
@@ -50,9 +50,9 @@
                         <li class="dropdown-item"><a href="#{{ url_for('affiliates') }}">Affiliates</a></li>
                     </ul>
                 </li>
-                <li><a href="#{{ url_for('about') }}">What is Blues?</a></li>
-                <li><a href="#{{ url_for('events') }}">Events</a></li>
-                <li><a href="#{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('about') }}">What is Blues?</a></li>
+                <li><a href="{{ url_for('events') }}">Events</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </div><!-- close main-nav --> 
 
@@ -60,16 +60,16 @@
             <ul class="nav nav-pills navbar-fixed-top">
                 <li><a href="#index.html">Home</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="">About Roots <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="about-dropdown">
-                        <li class="dropdown-item"><a href="#staff.html">Staff</a></li>
-                        <li class="dropdown-item"><a href="#venue.html">Venue</a></li> 
-                        <li class="dropdown-item"><a href="#affiliates.html">Affiliates</a></li>
+                        <li class="dropdown-item"><a href="staff.html">Staff</a></li>
+                        <li class="dropdown-item"><a href="venue.html">Venue</a></li> 
+                        <li class="dropdown-item"><a href="affiliates.html">Affiliates</a></li>
                     </ul>
                 </li>
-                <li><a href="#about.html">What is Blues?</a></li>
-                <li><a href="#events.html">Events</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="about.html" class="link">What is Blues?</a></li>
+                <li><a href="events.html" class="link">Events</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
             </ul>
         </div> <!-- close mobile-nav -->
 
