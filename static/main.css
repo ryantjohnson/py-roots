@@ -115,7 +115,7 @@ Main content area
 ************************/
 
 #guts {
-	padding: 4em;
+	padding: 3em 4em;
 	padding-left: 6em;
 	border-radius: 10px; }
 
@@ -275,9 +275,18 @@ Footer
 	clear:both;
 }
 
+
+.social {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 20px;
+	height:50px;
+	width:100%;
+}
 .social span {
 	font-size: 2em;
-	margin: 10px 20px 10px 20px;
+	margin: 0px 10px;
 	text-align: center; }
 
 .social a:link, .social a:visited {
@@ -292,4 +301,9 @@ Footer
 	font-size:0.75em;
 	padding-bottom: 20px;
 	color:rgba(179,215,255,0.5);
+}
+
+
+.hide {
+	opacity: 0;
 }
