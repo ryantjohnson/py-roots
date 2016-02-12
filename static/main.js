@@ -4,12 +4,12 @@ $(function() {
 
     $('#guts').hide();
 
-    $('#guts').fadeIn(1000);
+    $('#guts').fadeIn(700);
 
     $('a.link').click(function(event) {
         event.preventDefault();
         newLocation = this.href;
-        $('#guts').fadeOut(1000, newpage);
+        $('#guts').fadeOut(700, newpage);
     });
 
     function newpage() {

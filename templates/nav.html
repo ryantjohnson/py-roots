@@ -1,0 +1,20 @@
+	<li><a href="{{ url_for('index') }}" class="link">Home</a></li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Roots <span class="caret"></span></a>
+			<ul class="dropdown-menu" id="about-dropdown">
+				<li class="dropdown-item"><a href="{{ url_for('staff') }}" class="link">Staff</a></li>
+				<li class="dropdown-item"><a href="{{ url_for('venue') }}" class="link">Venue</a></li> 
+				<li class="dropdown-item"><a href="{{ url_for('affiliates') }}" class="link">Affiliates</a></li>
+			</ul>
+	</li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">What is Blues? <span class="caret"></span></a>
+			<ul class="dropdown-menu" id="about-dropdown">
+				<li class="dropdown-item"><a href="{{ url_for('music') }}" class="link">The Music</a></li>
+				<li class="dropdown-item"><a href="{{ url_for('dance') }}" class="link">The Dance</a></li> 
+				<li class="dropdown-item"><a href="{{ url_for('culture') }}" class="link">Blues Dance Culture</a></li>
+			</ul>
+	</li>
+	<li><a href="{{ url_for('media') }}" class="link">Media</a></li>
+	<li><a href="{{ url_for('events') }}" class="link">Calendar</a></li>
+	<li><a href="{{ url_for('contact') }}" class="link">Contact</a></li>

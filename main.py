@@ -34,5 +34,22 @@ def venue():
 def affiliates():
 	return render_template('affiliates.html')
 
+@app.route("/media")
+def media():
+	return render_template('media.html')
+
+@app.route("/music")
+def music():
+	return render_template('music.html')
+
+@app.route("/dance")
+def dance():
+	return render_template('dance.html')
+
+@app.route("/culture")
+def culture():
+	return render_template('culture.html')
+
+
 if __name__ == "__main__":
 	app.run(debug=True, port=5000)
